@@ -11,3 +11,4 @@ if (!existsSync(join(here, "entry.png"))) {
 }
 const bytes = readFileSync(join(here, "entry.png"));
 writeFileSync(join(outDir, "entry.png"), bytes);
+console.log(`wrote ${bytes.length} bytes to ${join(outDir, "entry.png")}`);
